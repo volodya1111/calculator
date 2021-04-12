@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    font-family: Nunito;
+}
+
+
+.app{
+    width: 215px;
+    padding: 10px;
+}
+
+button{
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.85);
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+    grid-template-rows: repeat(5,50px);
+    grid-gap: 5px;
+}
+
+.calc{
+    border-radius: 10px;
+    background-color: black;
+    padding: 10px;
+    width: 215px;
+}
+
+button:nth-child(17){
+    grid-column: span 2;
+    text-align: left;
+    padding-left:20px;
+}
+
+input{
+    color: white;
+    border: none;
+    outline: none;
+    background-color: black;
+    font-size: 40px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    width: 215px;
+    appearance: none;
+    margin: 0;
+    text-align: right;
+    caret-color: transparent;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.grey{
+    background-color: #a6a6a6;
+}
+
+.orange{
+    background-color: orange;
+    color: white;
+}
+
+.dark_grey{
+    background-color: #333333;
+    color: white;
+}
